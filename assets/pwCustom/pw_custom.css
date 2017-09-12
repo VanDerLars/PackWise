@@ -1,0 +1,40 @@
+
+.page-header-content.navbar-fixed-top {
+	padding-bottom: 50px;
+}
+.page-title {
+    border-bottom: 1px solid #fff;
+}
+.navbar-content {
+	
+}
+.panel-filter {
+	
+}
+
+.pwAuctionStat {
+	border-radius: 50px;
+	padding: 5px 15px;
+	margin-top: -5px;
+}
+.pwAuctionStat.pwHighest {
+	border: 1px solid #41CC7D;
+	color: #41CC7D;
+}
+.pwAuctionStat.pwLoose {
+	border: 1px solid #F56978;
+	color: #F56978;
+}
+
+
+.pw-icon-large, .pw-icon-small {
+	
+}
+
+.pw-icon-large.pw-icon-ibc {
+	background: url('img/icon_ibc_full.png') left center no-repeat;
+	background-size: contain;
+	min-height: 70px;
+	height: 100%;
+}
+

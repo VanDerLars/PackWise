@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>PACK:WISE</title>
+
+
+	<!-- Packwise vorrangig CSS files -->
+	<link href="assets/pwCustom/pw_bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="assets/pwCustom/pw_core.css" rel="stylesheet" type="text/css">
+	<!-- /Packwise CSS files -->
+
+	<!-- Global stylesheets -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons/icomoon/styles.css" rel="stylesheet" type="text/css">
+	<!-- /global stylesheets -->
+	
+	<!-- Packwise nachrangig CSS files -->
+	<link href="assets/pwCustom/pw_components.css" rel="stylesheet" type="text/css">
+	<link href="assets/pwCustom/pw_custom.css" rel="stylesheet" type="text/css">
+	<link href="assets/pwCustom/pw_colors.css" rel="stylesheet" type="text/css">
+	<!-- /Packwise CSS files -->
+	
+	<!-- Core JS files -->
+	<script type="text/javascript" src="assets/js/plugins/loaders/pace.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/libraries/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/loaders/blockui.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/nicescroll.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/drilldown.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/ui/fab.min.js"></script>
+	<!-- /core JS files -->
+
+	<!-- Theme JS files -->
+	<script type="text/javascript" src="assets/js/plugins/ui/prism.min.js"></script>
+	<script type="text/javascript" src="assets/js/core/app.js"></script>
+	<!-- /theme JS files -->
+	
+	<!-- Packwise JS files -->
+	<script type="text/javascript" src="assets/pwCustom/custom.js"></script>
+	<!-- /Packwise JS files -->
+
+</head>
+
+<body class="">
+
+	<!-- Page header -->
+	<div class="page-header page-header-inverse">
+
+		<!-- Page header content -->
+		<div class="page-header-content" id="navbar-first">
+			<div class="page-title">
+			
+				<!-- LL: Header - Logo -->
+				<a class="pw-header-brand" href="index.html"><img src="assets/pwCustom/img/pw_logo_header_M.png" alt=""></a>
+			</div>
+
+			<!-- LL: Breadcrumbs -->
+			<div class="heading-elements">
+				<ul class="breadcrumb heading-text">
+				
+					<!-- LL: Breadcrumb-Home -->
+					<li><a href="index.html"><i class="icon-home2 position-left"></i> Home</a></li>
+					
+						<!-- LL: Breadcrumb-Parent -->
+					<li><a href="navbar_multiple_top_bottom.html">Vorige Seite</a></li>
+					
+						<!-- LL: Breadcrumb-Active -->
+					<li class="active">Aktuelle Seite</li>
+				</ul>
+			</div>
+		</div>
+		<!-- /page header content -->
+
+
+		<!-- Second navbar /Hauptmenü -->
+		
+		<div class="navbar-content" >
+			<div class="navbar navbar-inverse" id="navbar-second">
+		
+				<!-- LL: mobile Navbar-Toggle -->
+				<ul class="nav navbar-nav no-border visible-xs-block">
+					<li>
+						<a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle">
+							<i class="icon-menu7"></i>
+						</a>
+					</li>
+				</ul>
+				<!-- /mobile Navbar-Toggle -->
+				
+				
+				<!-- LL: Navbar-Content -->
+				<div class="navbar-content navbar-collapse collapse" id="navbar-second-toggle">
+			
+				<!-- LL: Hauptmenü (HM) -->
+				<ul class="nav navbar-nav navbar-nav-material">
+				
+					<!-- LL: HM.Link-> Startseite -->
+					<li><a href="index.html">Dashboard</a></li>
+
+					<!-- LL: HM.Menüdropdown.Wide -> Weites Menü, 4-Spaltig -->
+					<li class="dropdown mega-menu mega-menu-wide">
+						<!-- LL: Beschriftung und Icon -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Components <span class="caret"></span></a>
+						
+						<!-- Wide-Menu-Elemente -->
+						<div class="dropdown-menu dropdown-content">
+							<div class="dropdown-content-body">
+								<div class="row">
+									
+									<!-- Wide-Menu-Spalte (3/12) -->
+									<div class="col-md-3">
+									
+										<!-- Wide-Menu-Spalte Überschrift -->
+										<span class="menu-heading underlined">Spalte 1 von 4</span>
+										
+										<!-- Wide-Menu-Spalte-Elemente -->
+										<ul class="menu-list">
+											<li>
+												<a href="#"><i class="icon-pencil3"></i> Menü mit Submenü 1</a>
+												<ul>
+													<li><a href="form_inputs_basic.html">Submenü 1</a></li>
+													<li><a href="form_checkboxes_radios.html">Submenü 2</a></li>
+													<li><a href="form_input_groups.html">Submenü 3</a></li>
+													<li>
+														<a href="#">Submenü 4 mit Submenü</a>
+														<ul>
+															<li><a href="form_select2.html">Submenü 4 Submenü 1</a></li>
+															<li><a href="form_multiselect.html">Submenü 4 Submenü 2</a></li>
+															<li><a href="form_select_box_it.html">Submenü 4 Submenü 3</a></li>
+															<li><a href="form_bootstrap_select.html">Submenü 4 Submenü 4</a></li>
+														</ul>
+													</li>
+													<li><a href="form_tag_inputs.html">Submenü 5</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><i class="icon-file-css"></i> Menü mit Submenü 2</a>
+												<ul>
+													<li><a href="alpaca_basic.html">Submenü 1</a></li>
+													<li><a href="alpaca_advanced.html">Submenü 2</a></li>
+													<li><a href="alpaca_controls.html">Submenü 3</a></li>
+												</ul>
+											</li>
+											
+											<li>
+												<a href="alpaca_basic.html"><i class="icon-insert-template"></i> Menü OHNE Submenü</a>
+											</li>
+										</ul>
+									</div>
+									
+									<!-- Wide-Menu-Spalte (3/12) -->
+									<div class="col-md-3">
+									
+										<!-- Wide-Menu-Spalte Überschrift -->
+										<span class="menu-heading underlined">Spalte 2 von 4</span>
+										
+										<!-- Wide-Menu-Spalte-Elemente -->
+										<ul class="menu-list">
+											<li>
+												<a href="#"><i class="icon-pencil3"></i> Menü 2 mit Submenü 1</a>
+												<ul>
+													<li><a href="form_inputs_basic.html">Submenü 1</a></li>
+													<li><a href="form_checkboxes_radios.html">Submenü 2</a></li>
+													<li><a href="form_input_groups.html">Submenü 3</a></li>
+													<li>
+														<a href="#">Submenü 4 mit Submenü</a>
+														<ul>
+															<li><a href="form_select2.html">Submenü 4 Submenü 1</a></li>
+															<li><a href="form_multiselect.html">Submenü 4 Submenü 2</a></li>
+															<li><a href="form_select_box_it.html">Submenü 4 Submenü 3</a></li>
+															<li><a href="form_bootstrap_select.html">Submenü 4 Submenü 4</a></li>
+														</ul>
+													</li>
+													<li><a href="form_tag_inputs.html">Submenü 5</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><i class="icon-file-css"></i> Menü 2 mit Submenü 2</a>
+												<ul>
+													<li><a href="alpaca_basic.html">Submenü 1</a></li>
+													<li><a href="alpaca_advanced.html">Submenü 2</a></li>
+													<li><a href="alpaca_controls.html">Submenü 3</a></li>
+												</ul>
+											</li>
+											
+											<li>
+												<a href="alpaca_basic.html"><i class="icon-insert-template"></i> Menü 2 OHNE Submenü</a>
+											</li>
+										</ul>
+									</div>
+									
+									<!-- Wide-Menu-Spalte (3/12) -->
+									<div class="col-md-3">
+									
+										<!-- Wide-Menu-Spalte Überschrift -->
+										<span class="menu-heading underlined">Spalte 3 von 4</span>
+										
+										<!-- Wide-Menu-Spalte-Elemente -->
+										<ul class="menu-list">
+											<li>
+												<a href="#"><i class="icon-pencil3"></i> Menü 3 mit Submenü 1</a>
+												<ul>
+													<li><a href="form_inputs_basic.html">Submenü 1</a></li>
+													<li><a href="form_checkboxes_radios.html">Submenü 2</a></li>
+													<li><a href="form_input_groups.html">Submenü 3</a></li>
+													<li>
+														<a href="#">Submenü 4 mit Submenü</a>
+														<ul>
+															<li><a href="form_select2.html">Submenü 4 Submenü 1</a></li>
+															<li><a href="form_multiselect.html">Submenü 4 Submenü 2</a></li>
+															<li><a href="form_select_box_it.html">Submenü 4 Submenü 3</a></li>
+															<li><a href="form_bootstrap_select.html">Submenü 4 Submenü 4</a></li>
+														</ul>
+													</li>
+													<li><a href="form_tag_inputs.html">Submenü 5</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><i class="icon-file-css"></i> Menü 3 mit Submenü 2</a>
+												<ul>
+													<li><a href="alpaca_basic.html">Submenü 1</a></li>
+													<li><a href="alpaca_advanced.html">Submenü 2</a></li>
+													<li><a href="alpaca_controls.html">Submenü 3</a></li>
+												</ul>
+											</li>
+											
+											<li>
+												<a href="alpaca_basic.html"><i class="icon-insert-template"></i> Menü 3 OHNE Submenü</a>
+											</li>
+										</ul>
+									</div>
+									
+									<!-- Wide-Menu-Spalte (3/12) -->
+									<div class="col-md-3">
+									
+										<!-- Wide-Menu-Spalte Überschrift -->
+										<span class="menu-heading underlined">Spalte 4 von 4</span>
+										
+										<!-- Wide-Menu-Spalte-Elemente -->
+										<ul class="menu-list">
+											<li>
+												<a href="#"><i class="icon-pencil3"></i> Menü 4 mit Submenü 1</a>
+												<ul>
+													<li><a href="form_inputs_basic.html">Submenü 1</a></li>
+													<li><a href="form_checkboxes_radios.html">Submenü 2</a></li>
+													<li><a href="form_input_groups.html">Submenü 3</a></li>
+													<li>
+														<a href="#">Submenü 4 mit Submenü</a>
+														<ul>
+															<li><a href="form_select2.html">Submenü 4 Submenü 1</a></li>
+															<li><a href="form_multiselect.html">Submenü 4 Submenü 2</a></li>
+															<li><a href="form_select_box_it.html">Submenü 4 Submenü 3</a></li>
+															<li><a href="form_bootstrap_select.html">Submenü 4 Submenü 4</a></li>
+														</ul>
+													</li>
+													<li><a href="form_tag_inputs.html">Submenü 5</a></li>
+												</ul>
+											</li>
+											<li>
+												<a href="#"><i class="icon-file-css"></i> Menü 4 mit Submenü 2</a>
+												<ul>
+													<li><a href="alpaca_basic.html">Submenü 1</a></li>
+													<li><a href="alpaca_advanced.html">Submenü 2</a></li>
+													<li><a href="alpaca_controls.html">Submenü 3</a></li>
+												</ul>
+											</li>
+											
+											<li>
+												<a href="alpaca_basic.html"><i class="icon-insert-template"></i> Menü 4 OHNE Submenü</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<!-- /HM.Menüdropdown.Wide -->
+
+					<!-- LL: HM.Menüdropdown.Reg -> schmales Menü, 1-Spaltig -->
+					<li class="dropdown">
+						<!-- LL: Beschriftung und Icon -->
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							Page kits <span class="caret"></span>
+						</a>
+
+						<!-- LL: Menüpunte -->
+						<ul class="dropdown-menu width-250">
+						
+							<!-- LL: Menü-Überschrift -->
+							<li class="dropdown-header">Ich bin eine Überschrift</li>		
+							
+							<!-- LL: Menü-Punkt mit Unterpunkten -->				
+							<li class="dropdown-submenu">
+							
+								<!-- LL: Menü-Element -->
+								<a href="#"><i class="icon-task"></i> Ich bin eine Seite</a>
+								
+								<!-- LL: Menü-Element: Submenü -->
+								<ul class="dropdown-menu width-200">
+									<!-- LL: Submenü-Überschrift -->
+									<li class="dropdown-header highlight">Submenü-Überschrift yo</li>
+									
+									<!-- LL: Submenü-Element -->
+									<li><a href="blog_classic_v.html">Submenü-Element</a></li>
+									<li><a href="blog_classic_h.html">Submenü-Element 2</a></li>
+									<li><a href="blog_grid.html">Submenü-Element 3</a></li>
+									<li><a href="blog_single.html">Submenü-Element 4</a></li>
+									
+									<!-- LL: Submenü-Devider -->
+									<li class="divider"></li>
+									<li><a href="blog_sidebar_left.html">Subemenü nach Devider 1</a></li>
+									<li><a href="blog_sidebar_right.html">Subemenü nach Devider 2</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#"><i class="icon-images2"></i> noch eine Seite</a>
+								<ul class="dropdown-menu width-200">
+									<li class="dropdown-header highlight">Überschrift</li>
+									<li><a href="gallery_grid.html">Seite 1</a></li>
+									<li><a href="gallery_titles.html">Seite 2</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown-header">Ich bin auch eine Überschrift</li>
+							<li class="dropdown-submenu">
+								<a href="#"><i class="icon-cash3"></i> Invoicing</a>
+								<ul class="dropdown-menu width-200">
+									<li class="dropdown-header highlight">Options</li>
+									<li><a href="invoice_template.html">Invoice template</a></li>
+									<li><a href="invoice_grid.html">Invoice grid</a></li>
+									<li><a href="invoice_archive.html">Invoice archive</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#"><i class="icon-profile"></i> Profile</a>
+								<ul class="dropdown-menu width-200">
+									<li class="dropdown-header highlight">Options</li>
+									<li><a href="user_pages_profile.html">Simple profile</a></li>
+									<li><a href="user_pages_profile_tabbed.html">Tabbed profile</a></li>
+									<li><a href="user_pages_profile_cover.html">Profile with cover</a></li>
+								</ul>
+							</li>
+
+							<li class="dropdown-submenu">
+								<a href="#"><i class="icon-grid6"></i> Others</a>
+								<ul class="dropdown-menu width-200">
+									<li class="dropdown-header highlight">Options</li>
+									<li><a href="user_pages_cards.html">User cards</a></li>
+									<li><a href="user_pages_list.html">User list</a></li>
+								</ul>
+							</li>
+
+						</ul>
+					</li>
+					<!-- /HM.Menüdropdown.Reg -->
+				</ul>
+				<!-- /Hauptmenü -->
+
+				<!-- LL: Dropdowns für Profil und Benachrichtigungen -->
+				<ul class="nav navbar-nav navbar-nav-material navbar-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-bell2"></i>
+								<span class="visible-xs-inline-block position-right">Activity</span>
+								<span class="status-mark border-pink-300"></span>
+							</a>
+
+							<div class="dropdown-menu dropdown-content">
+								<div class="dropdown-content-heading">
+									Activity
+									<ul class="icons-list">
+										<li><a href="#"><i class="icon-menu7"></i></a></li>
+									</ul>
+								</div>
+
+								<ul class="media-list dropdown-content-body width-350">
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn bg-success-400 btn-rounded btn-icon btn-xs"><i class="icon-mention"></i></a>
+										</div>
+
+										<div class="media-body">
+											<a href="#">Taylor Swift</a> mentioned you in a post "Angular JS. Tips and tricks"
+											<div class="media-annotation">4 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn bg-pink-400 btn-rounded btn-icon btn-xs"><i class="icon-paperplane"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Special offers have been sent to subscribed users by <a href="#">Donna Gordon</a>
+											<div class="media-annotation">36 minutes ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn bg-blue btn-rounded btn-icon btn-xs"><i class="icon-plus3"></i></a>
+										</div>
+										
+										<div class="media-body">
+											<a href="#">Chris Arney</a> created a new <span class="text-semibold">Design</span> branch in <span class="text-semibold">Limitless</span> repository
+											<div class="media-annotation">2 hours ago</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn bg-purple-300 btn-rounded btn-icon btn-xs"><i class="icon-truck"></i></a>
+										</div>
+										
+										<div class="media-body">
+											Shipping cost to the Netherlands has been reduced, database updated
+											<div class="media-annotation">Feb 8, 11:30</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn bg-warning-400 btn-rounded btn-icon btn-xs"><i class="icon-bubble8"></i></a>
+										</div>
+										
+										<div class="media-body">
+											New review received on <a href="#">Server side integration</a> services
+											<div class="media-annotation">Feb 2, 10:20</div>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<a href="#" class="btn btn-rounded btn-icon btn-xs"><i class="icon-spinner11"></i></a>
+										</div>
+										
+										<div class="media-body">
+											<strong>January, 2016</strong> - 1320 new users, 3284 orders, $49,390 revenue
+											<div class="media-annotation">Feb 1, 05:46</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="icon-bubble8"></i>
+								<span class="visible-xs-inline-block position-right">Messages</span>
+							</a>
+							
+							<div class="dropdown-menu dropdown-content width-350">
+								<div class="dropdown-content-heading">
+									Messages
+									<ul class="icons-list">
+										<li><a href="#"><i class="icon-menu7"></i></a></li>
+									</ul>
+								</div>
+
+								<ul class="media-list dropdown-content-body">
+									<li class="media">
+										<div class="media-left">
+											<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+											<span class="badge bg-danger-400 media-badge">5</span>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading">
+												<span class="text-semibold">James Alexander</span>
+												<span class="media-annotation pull-right">04:58</span>
+											</a>
+
+											<span class="text-muted">who knows, maybe that would be the best thing for me...</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left">
+											<img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt="">
+											<span class="badge bg-danger-400 media-badge">4</span>
+										</div>
+
+										<div class="media-body">
+											<a href="#" class="media-heading">
+												<span class="text-semibold">Margo Baker</span>
+												<span class="media-annotation pull-right">12:16</span>
+											</a>
+
+											<span class="text-muted">That was something he was unable to do because...</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+										<div class="media-body">
+											<a href="#" class="media-heading">
+												<span class="text-semibold">Jeremy Victorino</span>
+												<span class="media-annotation pull-right">22:48</span>
+											</a>
+
+											<span class="text-muted">But that would be extremely strained and suspicious...</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+										<div class="media-body">
+											<a href="#" class="media-heading">
+												<span class="text-semibold">Beatrix Diaz</span>
+												<span class="media-annotation pull-right">Tue</span>
+											</a>
+
+											<span class="text-muted">What a strenuous career it is that I've chosen...</span>
+										</div>
+									</li>
+
+									<li class="media">
+										<div class="media-left"><img src="assets/images/placeholder.jpg" class="img-circle img-sm" alt=""></div>
+										<div class="media-body">
+											<a href="#" class="media-heading">
+												<span class="text-semibold">Richard Vango</span>
+												<span class="media-annotation pull-right">Mon</span>
+											</a>
+											
+											<span class="text-muted">Other travelling salesmen live a life of luxury...</span>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</li>
+
+						<li class="dropdown dropdown-user">
+							<a class="dropdown-toggle" data-toggle="dropdown">
+								<img src="assets/images/placeholder.jpg" alt="">
+								<span>Victoria</span>
+								<i class="caret"></i>
+							</a>
+
+							<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#"><i class="icon-user-plus"></i> My profile</a></li>
+								<li><a href="#"><i class="icon-coins"></i> My balance</a></li>
+								<li><a href="#"><span class="badge bg-blue pull-right">26</span> <i class="icon-comment-discussion"></i> Messages</a></li>
+								<li class="divider"></li>
+								<li><a href="#"><i class="icon-cog5"></i> Account settings</a></li>
+								<li><a href="#"><i class="icon-switch2"></i> Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				
+				<!-- LL: Optionen dropbown-->
+				<ul class="nav navbar-nav navbar-nav-material navbar-right">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-cog3"></i>
+							<span class="caret"></span>
+						</a>
+						
+						<!-- Optionen Dropdown Content -->
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#"><i class="icon-user-lock"></i> Lars Lehmann</a></li>
+							<li><a href="#"><i class="icon-statistics"></i> Ist echt cool</a></li>
+							<li><a href="#"><i class="icon-accessibility"></i> Stimmts?</a></li>
+							<li class="divider"></li>
+							<li><a href="#"><i class="icon-gear"></i> Ja, stimmt</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			
+			</div>
+		</div>
+		<!-- /second navbar -->
+
+	</div>
+	<!-- /page header -->
+
+
+	<!-- Page container -->
+	<div class="page-container">
+		<!-- Page content -->
+		<div class="page-content">
+
+			<!-- Main content -->
+			<div class="content-wrapper">
+
+				<!-- Info alert -->
+				<div class="alert alert-info alert-styled-left alert-arrow-left alert-component">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+					<h6 class="alert-heading text-semibold">Alert Info</h6>
+					This page demonstrates both top and bottom fixed navbars. Bottom navbar is <strong>always</strong> sticked to the bottom of the window.
+			    </div>
+			    <!-- /info alert -->
+			    
+				<!-- Info alert -->
+				<div class="alert alert-success alert-styled-left alert-arrow-left alert-component">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+					<h6 class="alert-heading text-semibold">Alert Success</h6>
+					This page demonstrates both top and bottom fixed navbars. Bottom navbar is <strong>always</strong> sticked to the bottom of the window.
+			    </div>
+			    <!-- /info alert -->
+
+				<!-- Info alert -->
+				<div class="alert alert-primary alert-styled-left alert-arrow-left alert-component">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+					<h6 class="alert-heading text-semibold">alert Primary</h6>
+					This page demonstrates both top and bottom fixed navbars. Bottom navbar is <strong>always</strong> sticked to the bottom of the window.
+				</div>
+				<!-- /info alert -->
+
+				<!-- Info alert -->
+				<div class="alert alert-warning alert-styled-left alert-arrow-left alert-component">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+					<h6 class="alert-heading text-semibold">alert Warning</h6>
+					This page demonstrates both top and bottom fixed navbars. Bottom navbar is <strong>always</strong> sticked to the bottom of the window.
+				</div>
+				<!-- /info alert -->
+				
+				<!-- Info alert -->
+				<div class="alert alert-danger alert-styled-left alert-arrow-left alert-component">
+					<button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button>
+					<h6 class="alert-heading text-semibold">alert Danger</h6>
+					This page demonstrates both top and bottom fixed navbars. Bottom navbar is <strong>always</strong> sticked to the bottom of the window.
+				</div>
+				<!-- /info alert -->
+
+				<!-- Multiple navbars -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Normale Überschrift H5</h5>
+						<div class="heading-elements">
+							<ul class="icons-list">
+		                		<li><a data-action="collapse"></a></li>
+		                		<li><a data-action="reload"></a></li>
+		                		<li><a data-action="close"></a></li>
+		                	</ul>
+	                	</div>
+					</div>
+
+					<div class="panel-body">
+						<div class="content-group-lg">
+							<p class="content-group">Example of multiple navbars, mostly used in horizontal navigation layout. This kind of navbar group supports both static and fixed positions. Also fixed position is available for 2 navbars (both are sticked) and for the first (only first is sticked). If you need to stick only secondary navbar when it becomes fixed only after scroll to its position, the best way to achieve this effect is by using <code>affix</code> component.</p>
+
+							<p class="text-semibold">Normaler Text, bold</p>
+						</div>
+
+						<div class="content-group-lg">
+							<h6 class="text-semibold">kleinere Überschrift H6</h6>
+							<p class="content-group">Default navbar position is <code>static</code> - always stays on top and not visible on page scroll. Since this is a default navbar position, the markup doesn't require any additional classes except Bootstrap defaults. Navbars come one after another as 2 different components, they don't depend on each other. But on small screens second navbar is hidden and is accessible through main navbar.</p>
+						</div>
+
+
+					</div>
+				</div>
+				<!-- /multiple navbars -->
+
+
+				<!-- Navbar classes -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Navbar classes</h5>
+
+						<div class="heading-elements">
+							<ul class="icons-list">
+		                		<li><a data-action="collapse"></a></li>
+		                		<li><a data-action="reload"></a></li>
+		                		<li><a data-action="close"></a></li>
+		                	</ul>
+	                	</div>
+					</div>
+
+					<div class="panel-body">
+						Navbar is a complex and very flexible component, which allows you to control appearance of different types of content, components placement, sizes, colors etc. All this functionality is available by setting proper classes to the navbar components and navbar itself. 
+						Table below demonstrates all available classes that can be used with the navbar:
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th style="width: 20%;">Class</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code>.navbar</code></td>
+									<td>Default navbar class, must be used with any navbar type and color. Responsible for basic navbar and navbar components styling as a parent container.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-fixed-top</code></td>
+									<td>Makes navbar sticked to the <code>top</code> of the page. Requires proper class for <code>&lt;body></code> tag, see the table below.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-fixed-bottom</code></td>
+									<td>Makes navbar sticked to the <code>bottom</code> of the page. Requires proper class for <code>&lt;body></code> tag, see the table below.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-static-top</code></td>
+									<td>Full-width navbar that scrolls away with the page. Unlike the <code>.navbar-fixed-*</code> classes, no need to add any extra class on the body for padding correction.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-default</code><br><code>.navbar-inverse</code></td>
+									<td>Default color options for navbar provided by Bootstrap styles: default - white navbar, inverse - dark grey navbar.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-default-secondary</code></td>
+									<td>If you have 2 light navbars, use this class to darken one of them. Based on default navbar background color.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-inverse.bg-*</code></td>
+									<td>Optional background colors for navbar. Just add one of available color classes to apply custom color scheme.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-transparent</code></td>
+									<td>Navbar with transparent background color. Mainly used in page header - inherits page header background color.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-component</code></td>
+									<td>Display navbar as a stand alone component, with border and rounded corners.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /navbar classes -->
+
+
+				<!-- Body classes -->
+				<div class="panel panel-flat">
+					<div class="panel-heading">
+						<h5 class="panel-title">Body classes</h5>
+						<div class="heading-elements">
+							<ul class="icons-list">
+		                		<li><a data-action="collapse"></a></li>
+		                		<li><a data-action="reload"></a></li>
+		                		<li><a data-action="close"></a></li>
+		                	</ul>
+	                	</div>
+					</div>
+
+					<div class="panel-body">
+						Bottom navbar is available only as a <code>fixed</code> component, always sticked to the bottom of the page. All dropdown menus are automatically changed to dropups in this type of navbar. The fixed navbar will overlay your other content, unless you add necessary to the top of the <code>&lt;body></code>. Depending on the fixed navbar position and size, add one of the classes specified in the following table. By default, the navbar is <code>46px</code> high.
+					</div>
+
+					<div class="table-responsive">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th style="width: 20%;">Class</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td><code>.navbar-top</code><br><code>.navbar-bottom</code></td>
+									<td>This class adds necessary <code>top</code> or <code>bottom</code> padding to the <code>&lt;body></code> tag. Works only with default navbar height. If another height is specified, apply another class, see the line below.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-top-*</code><br><code>.navbar-bottom-*</code></td>
+									<td>Controls padding for different navbar heights, for both positions. Available classes: mini (<code>*-xs</code>), small (<code>*-sm</code>) and large (<code>*-lg</code>). Default navbar requires <code>.navbar-top(bottom)-fixed</code> class.</td>
+								</tr>
+								<tr>
+									<td><code>.navbar-top-*-*</code><br><code>.navbar-bottom-*-*</code></td>
+									<td>This type of classes is used only with multiple navbars. This is the only class, where <code>*-md</code> suffix is available. For example class <code>.navbar-top-md-xs</code> means main navbar has default height (<code>.*-md-*</code>), secondary navbar - mini height (<code>.*-xs</code>). It calculates both navbars height and adds top or bottom padding with the same value.</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- /body classes -->
+
+			</div>
+			<!-- /main content -->
+
+		</div>
+		<!-- /page content -->
+
+	</div>
+	<!-- /page container -->
+
+
+	<!-- Footer -->
+	
+	<!-- /footer -->
+
+</body>
+</html>
