@@ -32,9 +32,59 @@
 }
 
 .pw-icon-large.pw-icon-ibc {
-	background: url('img/icon_ibc_full.png') left center no-repeat;
-	background-size: contain;
+	background: url(img/icon_ibc_full.png) left center no-repeat;
 	min-height: 70px;
 	height: 100%;
+	background-size: auto;
+}
+
+
+
+/* auf Bootrstrap geänderte Klassen, in Verbindung mit neuen Klassen */
+
+
+.status-mark {
+    width: auto;
+    height: auto;
+    display: inline-block;
+    border-radius: 50px;
+    border: 1px solid;
+    padding: 0px 5px;
+    background: #f66878;
+    font-size: 8px;
+    line-height: 13px;
+    right: 1px !important;
+    top: 25px !important;
+}
+
+.auction-list-item .count-mark {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	border-radius: 50px;
+	border: 2px solid;
+	padding: 0px 10px;
+	background: #f66878;
+	font-size: 14px;
+	line-height: 20px;
+	left: 40%;
+	top: 50%;
+	position: absolute;
+	color: #fff;
+	border-color: #fff;
+}
+
+.auction-list-item .text-right {
+	color: #929292;
+}
+.auction-list-item-content {
+	margin-top: 15px;
+}
+.auction-list-item .title-bold {
+	font-weight: 600;
+	margin-right: 15px;
+}
+.auction-list-item .title-light {
+	font-weight: 100;
 }
 

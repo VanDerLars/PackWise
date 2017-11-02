@@ -1,3 +1,36 @@
+<!--
+NOTIZEN
+
+01 Klappbare Kategotie-Titel:
+	- wichtig: gleiche Struktur wie hier verwenden, siehe jump01
+
+02 bessere Filter
+	- native aus dem Template verwenden, siehe jump02
+	- beide Skripte bei jump03 einbinden
+
+03 Filter Datumsfeld
+	- siehe jump04
+	- 8 scripte siehe jump05 einbinden (leider lassen sich diese nicht aussortieren, weil die Base-File "sidebar_components.js" alle benötigt :/
+
+04 Anzahl Benachrichtigungen unter glocke anzeigen
+	- siehe jump06
+
+05 Anzahl weiterer Artikel in Liste mit einem Badge anzeigen
+	- siehe jump07
+
+06 wichtig: auf listen-Elemente die Klasse "auction-list-item" anwenden
+
+
+08 Dropdown für Filter in Filter-Leiste
+	- siehe jump08
+
+-->
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,19 +71,39 @@
 	<!-- /core JS files -->
 
 	<!-- Theme JS files -->
+	
+	
+	<!-- jump03 -->
+	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_dual.js"></script>
+	
+	
+	<!-- Sidebar-Scripts -->
+	<!-- jump05 -->
+	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/widgets.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/color/spectrum.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/selectboxit.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_select.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/forms/inputs/duallistbox.min.js"></script>
+	<script type="text/javascript" src="assets/js/plugins/trees/fancytree_all.min.js"></script>
+	<script type="text/javascript" src="assets/js/pages/sidebar_components.js"></script>
+	
+	
 	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3.min.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/visualization/d3/d3_tooltip.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/forms/styling/switchery.min.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/forms/styling/uniform.min.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/forms/selects/bootstrap_multiselect.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/ui/moment/moment.min.js"></script>
-	<script type="text/javascript" src="assets/js/plugins/pickers/daterangepicker.js"></script>
-	
+		
 	<script type="text/javascript" src="assets/js/core/libraries/jquery_ui/interactions.min.js"></script>
 	<script type="text/javascript" src="assets/js/plugins/forms/selects/select2.min.js"></script>
 	<script type="text/javascript" src="assets/js/core/app.js"></script>
-	<script type="text/javascript" src="assets/js/pages/layout_sidebar_sticky_custom.js"></script>
 	<script type="text/javascript" src="assets/js/pages/form_select2.js"></script>
+	
+	
+	
 	<!-- /theme JS files -->
 	
 	<!-- Packwise JS files -->
@@ -360,7 +413,10 @@
 						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
 							<i class="icon-bell2"></i>
 							<span class="visible-xs-inline-block position-right">Activity</span>
-							<span class="status-mark border-pink-300"></span>
+							
+							<!-- jump06 -->
+							<span class="status-mark">10</span>
+							<!-- OLD: <span class="status-mark border-pink-300"></span> -->
 						</a>
 							
 							<div class="dropdown-menu dropdown-content">
@@ -516,7 +572,8 @@
 					
 					<!-- LL: Optionen dropbown-->
 					<ul class="nav navbar-nav navbar-nav-material navbar-right">
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-cog3"></i>
 								<span class="caret"></span>
 							</a>
@@ -539,6 +596,14 @@
 	<!-- /page header -->
 
 
+
+
+
+
+
+
+
+
 	<!-- Page container -->
 	<div class="page-container">
 
@@ -547,72 +612,168 @@
 
 			<!-- Main sidebar -->
 			<div class="sidebar sidebar-main sidebar-default">
-				<div class="sidebar-fixed">
-					<div class="sidebar-content">
+				<div class="sidebar-content">
 
-						<!-- Title -->
-						<div class="category-title h6"><span>Components</span>
+					<!-- Title -->
+					<div class="category-title h6"><span>Components</span>
+						
+						<!-- jump08 -->
+						<ul class="icons-list">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+									<i class="icon-filter4"></i>
+									<span class="caret"></span>
+								</a>
+								
+								<!-- Optionen Dropdown Content -->
+								<ul class="dropdown-menu dropdown-menu-right">
+									<li class="dropdown-header">Filter laden:</li>
+									<li><a href="#"></i>Filter 1</a></li>
+									<li><a href="#"></i>Filtername 2</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-move-down"></i>Filter speichern</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-pencil"></i>Filter bearbeiten</a></li>
+									<li class="divider"></li>
+									<li><a href="#"><i class="icon-x"></i>Filter zurücksetzen</a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<!-- /title -->
+
+
+					<!-- Search task -->
+					<!-- jump01 -->
+					<div class="sidebar-category">
+						<div class="category-title"><span>Search task</span>
 							
 							<ul class="icons-list">
-								<li><a href="#"><i class="icon-gear"></i></a></li>
+								<li><a href="#" data-action="collapse"></a></li>
 							</ul>
 						</div>
-						<!-- /title -->
-
-
-						<!-- Search task -->
-						<div class="sidebar-category">
-							<div class="category-title"><span>Search task</span>
-								
-								<ul class="icons-list">
-									<li><a href="#" data-action="collapse"></a></li>
-								</ul>
-							</div>
-							
-							<div class="category-content">
-								<form action="#">
-									<div class="has-feedback has-feedback-left">
-										<input type="search" class="form-control" placeholder="Type and hit Enter">
-										
-										<div class="form-control-feedback"><i class="icon-search4 text-size-base text-muted"></i></div>
-									</div>
-								</form>
-							</div>
+						
+						<div class="category-content">
+							<form action="#">
+								<div class="has-feedback has-feedback-left">
+									<input type="search" class="form-control" placeholder="Type and hit Enter">
+									
+									<div class="form-control-feedback"><i class="icon-search4 text-size-base text-muted"></i></div>
+								</div>
+							</form>
 						</div>
-						<!-- /search task -->
-
-
-						<!-- Task navigation -->
-						<div class="sidebar-category sidebar-category-visible">
-							<div class="category-title"><span>Navigation</span>
-								
-								<ul class="icons-list">
-									<li><a href="#" data-action="collapse"></a></li>
-								</ul>
-							</div>
-							
-							<div class="category-content no-padding">
-								<ul class="navigation navigation-main navigation-accordion">
-									<li class="navigation-header"><span>Actions</span> <i class="icon-menu" title="Actions"></i></li>
-									<li><a href="#"><i class="icon-googleplus5"></i> <span>Create task</span></a></li>
-									<li><a href="#"><i class="icon-portfolio"></i> <span>Create project</span></a></li>
-									<li><a href="#"><i class="icon-compose"></i> <span>Edit task list</span></a></li>
-									<li><a href="#"><i class="icon-user-plus"></i> <span>Assign users <span class="label label-success">94 online</span></span></a></li>
-									<li><a href="#"><i class="icon-collaboration"></i> <span>Create team</span></a></li>
-									<li class="navigation-header"><span>Tasks</span> <i class="icon-menu" title="Tasks"></i></li>
-									<li><a href="#"><i class="icon-files-empty"></i> <span>All tasks</span></a></li>
-									<li><a href="#"><i class="icon-file-plus"></i> <span>Active tasks <span class="badge badge-default">28</span></span></a></li>
-									<li><a href="#"><i class="icon-file-check"></i> <span>Closed tasks</span></a></li>
-									<li class="navigation-divider"></li>
-									<li><a href="#"><i class="icon-reading"></i> <span>Assigned to me <span class="badge badge-info">86</span></span></a></li>
-									<li><a href="#"><i class="icon-make-group"></i> <span>Assigned to my team <span class="badge badge-info">47</span></span></a></li>
-									<li><a href="#"><i class="icon-cog3"></i> <span>Settings</span></a></li>
-								</ul>
-							</div>
-						</div>
-						<!-- /task navigation -->
-
 					</div>
+					<!-- /search task -->
+					
+					<!-- Datumsfeld -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Pickers</span>
+							<ul class="icons-list">
+								<li><a href="#" data-action="collapse"></a></li>
+							</ul>
+						</div>
+
+						<div class="category-content">
+							<form action="#">
+								<div class="form-group">
+									<label>Date picker:</label>
+									<div class="input-group">
+										<span class="input-group-addon"><i class="icon-calendar"></i></span>
+										<input type="text" class="form-control datepicker" placeholder="Pick a date&hellip;">
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- /Datumsfeld -->
+					
+					
+					<!-- Filter -->
+					<!-- jump02 -->
+					<div class="sidebar-category">
+						<div class="category-title">
+							<span>Filter</span>
+							<ul class="icons-list">
+								<li><a href="#" data-action="collapse"></a></li>
+							</ul>
+						</div>
+
+						<div class="category-content">
+							<form action="#">
+								<div class="form-group">
+									<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+										<label class="display-block">
+											<input type="checkbox" class="switchery" checked="checked">
+											Free People
+										</label>	
+									</div>
+
+									<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+										<label class="display-block">
+											<input type="checkbox" class="switchery">
+											GAP
+										</label>
+									</div>
+
+									<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+										<label class="display-block">
+											<input type="checkbox" class="switchery" checked="checked">
+											Lane Bryant
+										</label>
+									</div>
+
+									<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+										<label class="display-block">
+											<input type="checkbox" class="switchery" checked="checked">
+											Ralph Lauren
+										</label>
+									</div>
+
+									<div class="checkbox checkbox-switchery checkbox-right switchery-xs">
+										<label class="display-block">
+											<input type="checkbox" class="switchery">
+											Liz Claiborne
+										</label>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- /filter -->
+					
+
+
+					<!-- Task navigation -->
+					<div class="sidebar-category sidebar-category-visible">
+						<div class="category-title"><span>Navigation</span>
+							
+							<ul class="icons-list">
+								<li><a href="#" data-action="collapse"></a></li>
+							</ul>
+						</div>
+						
+						<div class="category-content no-padding">
+							<ul class="navigation navigation-main navigation-accordion">
+								<li class="navigation-header"><span>Actions</span> <i class="icon-menu" title="Actions"></i></li>
+								<li><a href="#"><i class="icon-googleplus5"></i> <span>Create task</span></a></li>
+								<li><a href="#"><i class="icon-portfolio"></i> <span>Create project</span></a></li>
+								<li><a href="#"><i class="icon-compose"></i> <span>Edit task list</span></a></li>
+								<li><a href="#"><i class="icon-user-plus"></i> <span>Assign users <span class="label label-success">94 online</span></span></a></li>
+								<li><a href="#"><i class="icon-collaboration"></i> <span>Create team</span></a></li>
+								<li class="navigation-header"><span>Tasks</span> <i class="icon-menu" title="Tasks"></i></li>
+								<li><a href="#"><i class="icon-files-empty"></i> <span>All tasks</span></a></li>
+								<li><a href="#"><i class="icon-file-plus"></i> <span>Active tasks <span class="badge badge-default">28</span></span></a></li>
+								<li><a href="#"><i class="icon-file-check"></i> <span>Closed tasks</span></a></li>
+								<li class="navigation-divider"></li>
+								<li><a href="#"><i class="icon-reading"></i> <span>Assigned to me <span class="badge badge-info">86</span></span></a></li>
+								<li><a href="#"><i class="icon-make-group"></i> <span>Assigned to my team <span class="badge badge-info">47</span></span></a></li>
+								<li><a href="#"><i class="icon-cog3"></i> <span>Settings</span></a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- /task navigation -->
+
 				</div>
 			</div>
 			<!-- /main sidebar -->
@@ -670,13 +831,18 @@
 				<!-- /Filter -->
 				
 				
+				
+				
+				
+				
+				
+				
 				<!-- Panel -->
-				<div class="panel panel-flat">
+				<div class="panel panel-flat auction-list-item">
 					
 					<!-- Panel Header -->
 					<div class="panel-heading">
-						<h6 class="panel-title"><strong>Name Auktion #1</strong></h6>
-						
+						<h6 class="panel-title"><span class="title-bold">5000 x IBC ( 600 l ) UN</span><span class="title-light">ID # 646 065 14</span></h6>						
 						<!-- Panel items -->
 						<div class="heading-elements">
 							<ul class="icons-list">
@@ -688,10 +854,12 @@
 					</div>
 					
 					<!-- Panel Content -->
-					<div class="panel-body container">
-						<div class="row">
-							<div class="col-md-2 ">
+					<div class="panel-body container ">
+						<div class="row auction-list-item-content">
+							<div class="col-md-1 ">
 								<div class="pw-icon-large pw-icon-ibc align-middle"></div>
+								<!-- jump07 -->
+								<span class="count-mark">+10</span>
 							</div>
 							<div class="col-md-2">
 								<div class="col-sm-6 text-right">Produkt:</div><div class="col-sm-6 text-left">IBC</div>
@@ -699,7 +867,7 @@
 								<div class="col-sm-6 text-right">Ventil:</div><div class="col-sm-6 text-left">12Nu22 </div>	
 							</div>
 							
-							<div class="col-md-2">
+							<div class="col-md-3">
 								<div class="col-sm-6 text-right">Hersteller:</div><div class="col-sm-6 text-left">Hersteller #1</div>
 								<div class="col-sm-6 text-right">Füllung:</div><div class="col-sm-6 text-left">Glucose</div>
 								<div class="col-sm-6 text-right">Einfüllöffnung:</div><div class="col-sm-6 text-left">1abcd</div>	
@@ -712,9 +880,10 @@
 							</div>
 							
 							<div class="col-md-4">
-								<p class="content-group">
-									aktuelles Höchstgebot: 1.020,90 EUR (8 Gebote) <br>
-									Restlaufzeit: Noch 2 T. 3 Std. (31.05. 14:52 Uhr)
+								<div class="col-sm-6 text-right">aktuelles Höchstgebot:</div><div class="col-sm-6 text-left">1.020,90 EUR (8 Gebote)</div>
+								<div class="col-sm-6 text-right">Sofort-Kaufen-Preis:</div><div class="col-sm-6 text-left">kein Sofort-Kaufen</div>
+								<div class="col-sm-6 text-right">Restlaufzeit:</div><div class="col-sm-6 text-left">Noch 2 T. 3 Std.<br>(31.05. 14:52 Uhr)</div>
+									 
 								</p>
 							</div>
 						</div>

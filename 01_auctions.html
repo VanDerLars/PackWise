@@ -1,0 +1,888 @@
+<html><script type="text/javascript">window["_gaUserPrefs"] = {
+ioo: function () {
+	return true;
+}
+}</script>
+
+<head>
+	<link rel="stylesheet" type="text/css" class="__meteor-css__" href="/8f960f69dd7c9fa41d41b9276b17dece226a15db.css?meteor_css_resource=true">
+	<link rel="stylesheet" type="text/css" class="__meteor-css__" href="/73105150f479986ddf04f1d406e16215d9707385.css?meteor_css_resource=true">
+	<link rel="stylesheet" type="text/css" class="__meteor-css__" href="/e97a3d6269557e32764fd73ae2f388c7c789a6dc.css?meteor_css_resource=true">
+	<link rel="stylesheet" type="text/css" class="__meteor-css__" href="/8bd883cc04c238510162cca0270144c13898b4f2.css?meteor_css_resource=true">
+	
+	<meta charset="utf-8">
+	
+	<title>Packwise</title>
+	
+	<meta name="description" content="packwise">
+	
+	<meta name="viewport" content="initial-scale=1, minimal-ui, maximum-scale=1, minimum-scale=1">
+	
+	<link rel="shortcut icon" type="image/png" href="/favicon.png?v1" sizes="16x16 32x32 64x64 72x72">
+	<link rel="icon" type="image/png" href="/favicon.png?v1" sizes="16x16 32x32 64x64 72x72">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+  <!-- <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-precomposed.png"> -->
+
+<style type="text/css">.ReactPasswordStrength {
+border: 1px solid #c6c6c6;
+box-sizing: border-box;
+color: #090809;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 18px;
+line-height: 1;
+position: relative;
+}
+
+.ReactPasswordStrength-input {
+	border: none;
+	box-sizing: border-box;
+	font-size: 18px;
+	padding: 14px 0 12px 14px;
+	width: calc(85% - 28px);
+}
+
+.ReactPasswordStrength-input:not(:focus).is-password-invalid {
+	color: #D1462F;
+}
+
+.ReactPasswordStrength-input:focus {
+	outline: none;
+}
+
+.ReactPasswordStrength-strength-desc {
+	color: transparent;
+	font-style: italic;
+	padding: 14px 12px;
+	position: absolute;
+	top: 1px;
+	right: 0;
+	text-align: right;
+	transition: color 250ms ease-in-out;
+	width: 15%;
+}
+
+.ReactPasswordStrength.is-strength-0 .ReactPasswordStrength-strength-desc {
+	color: #D1462F;
+}
+
+.ReactPasswordStrength.is-strength-1 .ReactPasswordStrength-strength-desc {
+	color: #D1462F;
+}
+
+.ReactPasswordStrength.is-strength-2 .ReactPasswordStrength-strength-desc {
+	color: #57B8FF;
+}
+
+.ReactPasswordStrength.is-strength-3 .ReactPasswordStrength-strength-desc {
+	color: #57B8FF;
+}
+
+.ReactPasswordStrength.is-strength-4 .ReactPasswordStrength-strength-desc {
+	color: #2FBF71;
+}
+
+.ReactPasswordStrength-strength-bar {
+	box-sizing: border-box;
+	height: 2px;
+	position: relative;
+	top: 1px;
+	right: 1px;
+	transition: width 300ms ease-out;
+	width: 0;
+}
+
+.ReactPasswordStrength.is-strength-0 .ReactPasswordStrength-strength-bar {
+	background: #D1462F;
+	width: 20%;
+}
+
+.ReactPasswordStrength.is-strength-1 .ReactPasswordStrength-strength-bar {
+	background: #D1462F;
+	width: 40%;
+}
+
+.ReactPasswordStrength.is-strength-2 .ReactPasswordStrength-strength-bar {
+	background: #57B8FF;
+	width: 60%;
+}
+
+.ReactPasswordStrength.is-strength-3 .ReactPasswordStrength-strength-bar {
+	background: #57B8FF;
+	width: 80%;
+}
+
+.ReactPasswordStrength.is-strength-4 .ReactPasswordStrength-strength-bar {
+	background: #2FBF71;
+	width: calc(100% + 2px);
+}
+</style><style type="text/css">.ReactPasswordStrength-strength-desc {
+	padding: 10px 70px;
+}</style><style type="text/css">/*!
+ * https://github.com/YouCanBookMe/react-datetime
+ */
+
+.rdt {
+	position: relative;
+}
+
+.rdtPicker {
+	display: none;
+	position: absolute;
+	width: 250px;
+	padding: 4px;
+	margin-top: 1px;
+	z-index: 99999 !important;
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,.1);
+	border: 1px solid #f9f9f9;
+}
+
+.rdtOpen .rdtPicker {
+	display: block;
+}
+
+.rdtStatic .rdtPicker {
+	box-shadow: none;
+	position: static;
+}
+
+.rdtPicker .rdtTimeToggle {
+	text-align: center;
+}
+
+.rdtPicker table {
+	width: 100%;
+	margin: 0;
+}
+
+.rdtPicker td, .rdtPicker th {
+	text-align: center;
+	height: 28px;
+}
+
+.rdtPicker td {
+	cursor: pointer;
+}
+
+.rdtPicker td.rdtDay:hover, .rdtPicker td.rdtHour:hover, .rdtPicker td.rdtMinute:hover, .rdtPicker td.rdtSecond:hover, .rdtPicker .rdtTimeToggle:hover {
+	background: #eeeeee;
+	cursor: pointer;
+}
+
+.rdtPicker td.rdtOld, .rdtPicker td.rdtNew {
+	color: #999999;
+}
+
+.rdtPicker td.rdtToday {
+	position: relative;
+}
+
+.rdtPicker td.rdtToday:before {
+	content: '';
+	display: inline-block;
+	border-left: 7px solid transparent;
+	border-bottom: 7px solid #428bca;
+	border-top-color: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	bottom: 4px;
+	right: 4px;
+}
+
+.rdtPicker td.rdtActive, .rdtPicker td.rdtActive:hover {
+	background-color: #428bca;
+	color: #fff;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.rdtPicker td.rdtActive.rdtToday:before {
+	border-bottom-color: #fff;
+}
+
+.rdtPicker td.rdtDisabled, .rdtPicker td.rdtDisabled:hover {
+	background: none;
+	color: #999999;
+	cursor: not-allowed;
+}
+
+.rdtPicker td span.rdtOld {
+	color: #999999;
+}
+
+.rdtPicker td span.rdtDisabled, .rdtPicker td span.rdtDisabled:hover {
+	background: none;
+	color: #999999;
+	cursor: not-allowed;
+}
+
+.rdtPicker th {
+	border-bottom: 1px solid #f9f9f9;
+}
+
+.rdtPicker .dow {
+	width: 14.2857%;
+	border-bottom: none;
+}
+
+.rdtPicker th.rdtSwitch {
+	width: 100px;
+}
+
+.rdtPicker th.rdtNext, .rdtPicker th.rdtPrev {
+	font-size: 21px;
+	vertical-align: top;
+}
+
+.rdtPrev span, .rdtNext span {
+	display: block;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.rdtPicker th.rdtDisabled, .rdtPicker th.rdtDisabled:hover {
+	background: none;
+	color: #999999;
+	cursor: not-allowed;
+}
+
+.rdtPicker thead tr:first-child th {
+	cursor: pointer;
+}
+
+.rdtPicker thead tr:first-child th:hover {
+	background: #eeeeee;
+}
+
+.rdtPicker tfoot {
+	border-top: 1px solid #f9f9f9;
+}
+
+.rdtPicker button {
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.rdtPicker button:hover {
+	background-color: #eee;
+}
+
+.rdtPicker thead button {
+	width: 100%;
+	height: 100%;
+}
+
+td.rdtMonth, td.rdtYear {
+	height: 50px;
+	width: 25%;
+	cursor: pointer;
+}
+
+td.rdtMonth:hover, td.rdtYear:hover {
+	background: #eee;
+}
+
+.rdtCounters {
+	display: inline-block;
+}
+
+.rdtCounters > div {
+	float: left;
+}
+
+.rdtCounter {
+	height: 100px;
+}
+
+.rdtCounter {
+	width: 40px;
+}
+
+.rdtCounterSeparator {
+	line-height: 100px;
+}
+
+.rdtCounter .rdtBtn {
+	height: 40%;
+	line-height: 40px;
+	cursor: pointer;
+	display: block;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* Internet Explorer/Edge */
+	user-select: none;
+}
+
+.rdtCounter .rdtBtn:hover {
+	background: #eee;
+}
+
+.rdtCounter .rdtCount {
+	height: 20%;
+	font-size: 1.2em;
+}
+
+.rdtMilli {
+	vertical-align: middle;
+	padding-left: 8px;
+	width: 48px;
+}
+
+.rdtMilli input {
+	width: 100%;
+	font-size: 1.2em;
+	margin-top: 37px;
+}
+	</style><style type="text/css"></style><style type="text/css"></style></head>
+<body class="">
+	<div id="react-root">
+		<div data-reactroot="">
+			<div>
+				<div class="page-header page-header-inverse">
+					<div class="page-header-content" id="navbar-first">
+						<div class="page-title"><a class="pw-header-brand" href="/">
+						<img src="img/pw_logo_header_M.png" alt=""></a></div>
+						
+						<div class="heading-elements">
+							<ul class="breadcrumb heading-text">
+								<li><a href="/"><i class="icon-home2 position-left"></i><!-- react-text: 13 --> <!-- /react-text --><!-- react-text: 14 -->Home<!-- /react-text --></a></li>
+								<li class="active">Auktionen</li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="navbar-content">
+						<div class="navbar navbar-inverse" id="navbar-second">
+							<ul class="nav navbar-nav no-border visible-xs-block">
+								<li><a class="text-center collapsed" data-toggle="collapse" data-target="#navbar-second-toggle"><i class="icon-menu7"></i></a></li>
+							</ul>
+							
+							<div class="navbar-content navbar-collapse collapse" id="navbar-second-toggle">
+								<ul class="navbar-nav navbar-nav-material nav">
+									<li role="presentation" class=""><a action="push" href="/auctions">Auktionen</a></li>
+									<li role="presentation" class=""><a action="push" href="/myauctions">Meine Auktionen</a></li>
+								</ul>
+								
+								<ul class="navbar-nav navbar-nav-material nav pull-right">
+									<li role="presentation" class=""><a action="push" href="/notifications"><i class="icon-bell2"></i></a></li>
+									<li class="dropdown"><a id="basic-nav-dropdown" role="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false" href="#"><!-- react-text: 146 -->Rene Bernhardt<!-- /react-text --><!-- react-text: 147 --> <!-- /react-text --><span class="caret"></span></a>
+										
+										<ul role="menu" class="dropdown-menu" aria-labelledby="basic-nav-dropdown">
+											<li role="presentation" class=""><a action="push" href="/usersettings" role="menuitem" tabindex="-1"><i class="icon-cog"></i><!-- react-text: 153 -->Nutzer Einstellungen<!-- /react-text --></a></li>
+											<li role="presentation" class=""><a role="menuitem" tabindex="-1" href="#"><i class="glyphicon glyphicon-log-out"></i><!-- react-text: 157 -->Abmelden<!-- /react-text --></a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="page-container">
+					<div class="page-content"><!-- react-empty: 164 --><div class="sidebar sidebar-main sidebar-default sidebar-separate">
+						<div class="sidebar-fixed">
+							<div class="sidebar-content">
+								<div class="sidebar-category">
+									<div class="category-title h6"><span>PLZ Filter</span></div>
+									
+									<div class="category-content">
+										<form action="#">
+											<div class="has-feedback has-feedback-left">
+												<input type="search" class="form-control" placeholder="PLZ">
+												
+												<div class="form-control-feedback"><i class="icon-search4 text-size-base text-muted"></i></div>
+											</div>
+										</form>
+									</div>
+								</div>
+								
+								<div class="sidebar-category">
+									<div class="category-title h6"><span>Filter</span></div>
+									
+									<div class="category-content">
+										<form action="#">
+											<div class="form-group">
+												<div class="dropdown btn-group">
+													<button id="filterdropdown" role="button" aria-haspopup="true" aria-expanded="false" type="button" class="dropdown-toggle btn btn-default"><!-- react-text: 185 -->Filter laden<!-- /react-text --><!-- react-text: 186 --> <!-- /react-text --><span class="caret"></span></button>
+													
+													<ul role="menu" class="dropdown-menu" aria-labelledby="filterdropdown"></ul>
+												</div>
+												
+												<button type="button" class="btn btn-sm btn-primary">Filter zurücksetzen</button>
+											</div>
+										</form>
+										
+										<div class="category-title"><span>Produkt-Typ</span></div>
+										
+										<form action="#">
+											<div class="form-group">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 209 -->IBC<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 213 -->Stahl-Fass<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 217 -->PE-Fass<!-- /react-text -->
+													</label>
+												</div>
+											</div>
+										</form>
+										
+										<div class="category-title"><span>Hersteller</span></div>
+										
+										<form action="#">
+											<div class="form-group">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 221 -->Greif<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 225 -->Mauser<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 229 -->MaschioPack<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 233 -->Schütz<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 237 -->Sotralentz<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 241 -->Werit<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 245 -->Sonstige<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 249 -->B&amp;B GmbH &amp; Co.KG<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 253 -->AST GmbH<!-- /react-text -->
+													</label>
+												</div>
+											</div>
+										</form>
+										
+										<div class="category-title"><span>Volumen</span></div>
+										
+										<form action="#">
+											<div class="form-group">
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 257 -->600 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 261 -->800 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 265 -->1000 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 269 -->1200 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 273 -->205 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 277 -->210 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 281 -->213 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 285 -->220 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 289 -->240 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 293 -->250 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 297 -->216.5 l<!-- /react-text -->
+													</label>
+												</div>
+												
+												<div class="checkbox">
+													<label>
+														<input type="checkbox" class="styled" value="on"><!-- react-text: 301 -->225 l<!-- /react-text -->
+													</label>
+												</div>
+											</div>
+										</form>
+										
+										<button disabled="" type="button" class="btn btn-warning">Filter speichern</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+						
+						<div class="content-wrapper">
+							<div class="row">
+								<div class="panel panel-default">
+									<div class="panel-body">
+										<table class="table">
+											<colgroup>
+												<col span="1" style="width: 10%;">
+												
+												<col span="1" style="width: 60%;">
+												
+												<col span="1" style="width: 10%;">
+												
+												<col span="1" style="width: 20%;">
+											</colgroup>
+											
+											<tbody>
+												<tr>
+													<td>Filtereinstellungen:</td>
+													
+													<td>
+														<div role="toolbar" class="btn-toolbar">
+															<div class="btn-group"></div>
+														</div>
+													</td>
+													
+													<td>Sortieren nach :</td>
+													
+													<td>
+														<select class="select">
+															<option value="remainingTime">Restlaufzeit</option>
+															
+															<option value="topBid">Höchsgebot</option>
+															
+															<option value="zipcode">PLZ</option>
+															
+															<option value="amount">Anzahl Artikel</option>
+														</select>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-xs-18">
+									<div>
+										<div class="panel panel-flat" style="border-style: dotted; border-color: blue; border-width: 3px;">
+											<div class="panel-heading">
+												<h6 class="panel-title"><strong>5000 x IBC ( 600 l ) UN</strong><!-- react-text: 332 --><!-- /react-text --><!-- react-text: 333 --> <!-- /react-text -->
+												</h6><!-- react-text: 334 -->ID <!-- /react-text --><!-- react-text: 335 --># 646 065 14<!-- /react-text --><div class="heading-elements">
+													<ul class="icons-list">
+														<li><!-- react-text: 339 -->Standort: <!-- /react-text --><!-- react-text: 340 -->013xx ( Germany )<!-- /react-text -->
+														</li>
+														<li class="pwAuctionStat pwHighest"></li>
+														<li><i class="glyphicon glyphicon-star-empty position-left" style="font-size: 2em;"></i></li>
+													</ul>
+												</div>
+											</div>
+											
+											<table class="table table-condensed" style="border: none;">
+												<colgroup>
+													<col span="1" style="width: 10%;">
+													
+													<col span="1" style="width: 10%;">
+													
+													<col span="1" style="width: 20%;">
+													
+													<col span="1" style="width: 20%;">
+													
+													<col span="1" style="width: 40%;">
+												</colgroup>
+												
+												<tbody>
+													<tr style="cursor: pointer; border: none;">
+														<td style="border: none;">5000 x</td>
+														
+														<td style="border: none;">
+															<img src="/img/icon_ibc.png" width="60px" height="60px">
+														</td>
+														
+														<td style="border: none;">
+															<table class="table table-condensed" style="border: none;">
+																<tbody>
+																	<tr>
+																		<td style="border: none;">Product:</td>
+																		
+																		<td style="border: none;">IBC</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Volume:</td>
+																		
+																		<td style="border: none;">600 l</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Ventil:</td>
+																		
+																		<td style="border: none;">50 mm</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+														
+														<td style="border: none;">
+															<table class="table table-condensed">
+																<tbody>
+																	<tr>
+																		<td style="border: none;">Hersteller:</td>
+																		
+																		<td style="border: none;">Schütz</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Füllgut:</td>
+																		
+																		<td style="border: none;">3,5,5-Trimethyl-1-hexanol</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Einfüllöffnung:</td>
+																		
+																		<td style="border: none;">150 mm</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+														
+														<td style="border: none;">
+															<table class="table table-condensed">
+																<colgroup>
+																	<col span="1" style="width: 40%;">
+																	
+																	<col span="1" style="width: 60%;">
+																</colgroup>
+																
+																<tbody>
+																	<tr>
+																		<td style="border: none;">aktuelles Höchsgebot:</td>
+																		
+																		<td style="border: none;">
+																			<div><!-- react-text: 390 -->noch kein Gebot<!-- /react-text --><a></a></div>
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Sofort-Kaufen-Preis:</td>
+																		
+																		<td style="border: none;">---</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Restlaufzeit:</td>
+																		
+																		<td style="border: none;"><!-- react-text: 398 -->1 T., 7 Std., 24 M., 30 s<!-- /react-text --><!-- react-text: 399 -->( <!-- /react-text --><!-- react-text: 400 -->03.11.2017 14:33<!-- /react-text --><!-- react-text: 401 --> )<!-- /react-text -->
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="panel panel-flat" style="border-style: dotted; border-color: blue; border-width: 3px;">
+											<div class="panel-heading">
+												<h6 class="panel-title"><strong>100 x PE-Fass , 50 x PE-Fass</strong><!-- react-text: 406 --><!-- /react-text --><!-- react-text: 407 --> <!-- /react-text -->
+												</h6><!-- react-text: 408 -->ID <!-- /react-text --><!-- react-text: 409 --># 489 554 14<!-- /react-text --><div class="heading-elements">
+													<ul class="icons-list">
+														<li><!-- react-text: 413 -->Standort: <!-- /react-text --><!-- react-text: 414 -->800xx ( Switzerland )<!-- /react-text -->
+														</li>
+														<li class="pwAuctionStat pwHighest"></li>
+														<li><i class="glyphicon glyphicon-star-empty position-left" style="font-size: 2em;"></i></li>
+													</ul>
+												</div>
+											</div>
+											
+											<table class="table">
+												<colgroup>
+													<col span="1" style="width: 60%;">
+													
+													<col span="1" style="width: 40%;">
+												</colgroup>
+												
+												<tbody>
+													<tr style="cursor: pointer;">
+														<td style="border: none;">
+															<table class="table">
+																<colgroup>
+																	<col span="1" style="width: 15%;">
+																	
+																	<col span="1" style="width: 15%;">
+																	
+																	<col span="1" style="width: 35%;">
+																	
+																	<col span="1" style="width: 35%;">
+																</colgroup>
+																
+																<tbody>
+																	<tr>
+																		<td style="border: none;">100 x</td>
+																		
+																		<td style="border: none;">
+																			<img src="/img/icon_fass_pv.png" width="30px" height="30px">
+																		</td>
+																		
+																		<td style="border: none;"><!-- react-text: 437 -->Produkt: <!-- /react-text --><!-- react-text: 438 -->PE-Fass , 225 l<!-- /react-text -->
+																		</td>
+																		
+																		<td style="border: none;"><!-- react-text: 440 -->Hersteller: <!-- /react-text --><!-- react-text: 441 -->Sotralentz<!-- /react-text -->
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">50 x</td>
+																		
+																		<td style="border: none;">
+																			<img src="/img/icon_fass_pv.png" width="30px" height="30px">
+																		</td>
+																		
+																		<td style="border: none;"><!-- react-text: 447 -->Produkt: <!-- /react-text --><!-- react-text: 448 -->PE-Fass , 220 l<!-- /react-text -->
+																		</td>
+																		
+																		<td style="border: none;"><!-- react-text: 450 -->Hersteller: <!-- /react-text --><!-- react-text: 451 -->Schütz<!-- /react-text -->
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+														
+														<td style="border: none;">
+															<table class="table table-condensed">
+																<colgroup>
+																	<col span="1" style="width: 40%;">
+																	
+																	<col span="1" style="width: 60%;">
+																</colgroup>
+																
+																<tbody>
+																	<tr>
+																		<td style="border: none;">aktuelles Höchsgebot:</td>
+																		
+																		<td style="border: none;">
+																			<div><!-- react-text: 462 -->650<!-- /react-text --><a> (1 Gebote)</a></div>
+																		</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Sofort-Kaufen-Preis:</td>
+																		
+																		<td style="border: none;">750 €</td>
+																	</tr>
+																	
+																	<tr>
+																		<td style="border: none;">Restlaufzeit:</td>
+																		
+																		<td style="border: none;"><!-- react-text: 470 -->2 T., 7 Std., 21 M., 43 s<!-- /react-text --><!-- react-text: 471 -->( <!-- /react-text --><!-- react-text: 472 -->04.11.2017 14:31<!-- /react-text --><!-- react-text: 473 --> )<!-- /react-text -->
+																		</td>
+																	</tr>
+																</tbody>
+															</table>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	  <script type="text/javascript" src="/js/custom.js"></script>
+
+
+<script type="text/javascript">__meteor_runtime_config__ = JSON.parse(decodeURIComponent("%7B%22meteorRelease%22%3A%22METEOR%401.4.4.1%22%2C%22meteorEnv%22%3A%7B%22NODE_ENV%22%3A%22production%22%2C%22TEST_METADATA%22%3A%22%7B%7D%22%7D%2C%22PUBLIC_SETTINGS%22%3A%7B%22logging%22%3A%7B%22level%22%3A%22debug%22%7D%7D%2C%22ROOT_URL%22%3A%22https%3A%2F%2Falpha.packwise.de%2F%22%2C%22ROOT_URL_PATH_PREFIX%22%3A%22%22%2C%22appId%22%3A%221ipv1tp12xzfzhba088c%22%2C%22autoupdateVersion%22%3A%22539e394cd9b767f73943d0fd9da96a2369b2e0c9%22%2C%22autoupdateVersionRefreshable%22%3A%22a08b206edf1cfe858fd97399d76043751a2c2327%22%2C%22autoupdateVersionCordova%22%3A%22none%22%7D"));</script>
+	
+	  <script type="text/javascript" src="/6f31437cda883980bf07fd213feca1f06ef366b4.js?meteor_js_resource=true"></script>
+	
+	
+	
+	
+	<div class="bert-alert clearfix">
+		<div class="bert-container">
+			<div class="bert-gem"><i class="fa"></i></div>
+			
+			<div class="bert-content">
+				<p></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
