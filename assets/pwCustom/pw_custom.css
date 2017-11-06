@@ -105,6 +105,17 @@
 .auction-list-item .title-light {
 	font-weight: 100;
 }
+.auction-list-item, 
+.item-hover {
+    transition: all 0.5s ease !important;
+}
+.auction-list-item:hover, 
+.item-hover:hover {
+    box-shadow: 0 2px 5px #ddd;
+    transform: translateY(-1px);
+}
+
+
 
 .dropdown-menu > li > a > i.float-right{
     margin-right: 0px;
