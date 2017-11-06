@@ -46,13 +46,17 @@
     width: 35px;
     height: 35px;
 }
-.pw-icon-large.pw-icon-ibc {
+.pw-icon-large {
+	
+}
+
+.pw-icon-ibc {
 	background: url(img/icon_ibc_full.png) left center no-repeat;
 }
-.pw-icon-large.pw-icon-barrel-steel {
+.pw-icon-barrel-steel {
 	background: url(img/icon_barrel_steel.png) left center no-repeat;
 }
-.pw-icon-large.pw-icon-barrel-pv {
+.pw-icon-barrel-pv {
 	background: url(img/icon_barrel_pv.png) left center no-repeat;
 }
 
