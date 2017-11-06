@@ -105,3 +105,25 @@
     margin-top: 2px;
     top: 0;
 }
+i.icon-trash.float-right:hover {
+    background: #dcdcdc;
+    padding: 15px;
+    margin: -15px;
+}
+
+.rc-switch-checked:after {
+    left: 16px !important;
+}
+.rc-switch {
+    width: 32px !important;
+    height: 17px !important;
+}
+.rc-switch:after {
+    width: 13px !important;
+    height: 13px !important;
+}
+
+
+
+
+
