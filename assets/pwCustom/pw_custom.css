@@ -45,6 +45,7 @@
 .pw-icon-small {
     width: 35px;
     height: 35px;
+    background-size: contain !important;
 }
 .pw-icon-large {
 	
