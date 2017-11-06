@@ -37,15 +37,23 @@
 }
 
 
-.pw-icon-large, .pw-icon-small {
+.pw-icon-large {
+	min-height: 70px;
+	height: 100%;
+	background-size: contain !important;
+}
+.pw-icon-small {
 	
 }
 
 .pw-icon-large.pw-icon-ibc {
 	background: url(img/icon_ibc_full.png) left center no-repeat;
-	min-height: 70px;
-	height: 100%;
-	background-size: auto;
+}
+.pw-icon-large.pw-icon-barrel-steel {
+	background: url(img/icon_barrel_steel.png) left center no-repeat;
+}
+.pw-icon-large.pw-icon-barrel-pv {
+	background: url(img/icon_barrel_pv.png) left center no-repeat;
 }
 
 
@@ -122,8 +130,6 @@ i.icon-trash.float-right:hover {
     width: 13px !important;
     height: 13px !important;
 }
-
-
 
 
 
