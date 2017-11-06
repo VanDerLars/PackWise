@@ -43,9 +43,9 @@
 	background-size: contain !important;
 }
 .pw-icon-small {
-	
+    width: 35px;
+    height: 35px;
 }
-
 .pw-icon-large.pw-icon-ibc {
 	background: url(img/icon_ibc_full.png) left center no-repeat;
 }
