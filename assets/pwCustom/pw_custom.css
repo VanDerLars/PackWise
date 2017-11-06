@@ -1,3 +1,13 @@
+/* Floatings */
+.float-left {
+	float: left !important;
+}
+.float-right {
+	float: right !important;
+}
+.float-none {
+	float: none !important;
+}
 
 .page-header-content.navbar-fixed-top {
 	padding-bottom: 50px;
@@ -88,3 +98,10 @@
 	font-weight: 100;
 }
 
+.dropdown-menu > li > a > i.float-right{
+    margin-right: 0px;
+    margin-left: 12px;
+    float: right;
+    margin-top: 2px;
+    top: 0;
+}
