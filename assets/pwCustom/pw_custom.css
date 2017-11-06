@@ -115,7 +115,15 @@
     transform: translateY(-1px);
 }
 
-
+.auction-list-item.highlight-current {
+    border-left: 5px solid #3498ff;
+}
+.auction-list-item.highlight-closed {
+	border-left: 5px solid #FF5722;
+}
+.auction-list-item.highlight-pending {
+	border-left: 5px solid #c0c3c7;
+}
 
 .dropdown-menu > li > a > i.float-right{
     margin-right: 0px;
@@ -140,6 +148,14 @@ i.icon-trash.float-right:hover {
 .rc-switch:after {
     width: 13px !important;
     height: 13px !important;
+}
+
+
+
+
+/* Quick n dirty Design-Anpassungen ! Später verbessern ! */
+.checkbox-inline input[type="checkbox"] {
+    margin-top: -10px;
 }
 
 
