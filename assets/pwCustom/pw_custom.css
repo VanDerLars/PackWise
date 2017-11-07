@@ -148,6 +148,9 @@
 .auction-list-item .col-md-8 .row {
     border-top: 1px solid #ddd;
 }
+.auction-list-item .col-md-8 .row:nth-child(1) {
+    border-top: 1px solid #fff;
+}
 .col-md-8 .text-right,
 .col-md-8 .text-left {
     line-height: 35px;
