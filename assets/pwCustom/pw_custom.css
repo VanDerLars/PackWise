@@ -136,6 +136,14 @@
     transform: translateY(-1px);
 }
 
+.auction-list-item.small-list:hover {
+    box-shadow: none;
+    transform: translateY(0px);
+}
+.auction-list-item.small-list {
+    margin-bottom: 5px;
+}
+
 .auction-list-item.highlight-current {
     border-left: 5px solid #3498ff;
 }
@@ -157,6 +165,12 @@
 }
 .auction-list-item.small-items .count-mark {
     top: 17%;
+}
+.auction-list-item.small-list .panel-heading {
+	min-height: 50px;
+}
+.small-list .pw-icon-small.pw-icon-ibc.align-middle {
+    margin-top: -7px;
 }
 
 .dropdown-menu > li > a > i.float-right{
